@@ -1,0 +1,904 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="
+UTF-8
+">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>
+Automation Report
+</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">
+Cucumber Selenium Report
+</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 13, 2026 07:41:27 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@san</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">regester functionality</p>
+            <p class="text-sm">
+              <span>7:41:28 pm</span> / <span>00:01:24:945</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">regester functionality</h5>
+<span class='badge badge-success'>05.13.2026 7:41:28 pm</span>
+<span class='badge badge-danger'>05.13.2026 7:42:53 pm</span>
+<span class='badge badge-default'>00:01:24:945</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>register  valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_defination.register.i_should_launch_browser()">
+                <span>Given i should launch browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_into_home_page_navigate_to(java.lang.String)">
+                <span>When i enter into home page navigate to "http://automationexercise.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.check_whether_it_has_been_nagivated()">
+                <span>Then check whether it has been nagivated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_click_on_signup_login_button()">
+                <span>When i Click on Signup / Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_username_as(java.lang.String)">
+                <span>When i enter the username as "mohnish"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_email_as(java.lang.String)">
+                <span>And i enter the email as "jonny16@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_click_signup_button()">
+                <span>And i Click Signup button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.verify_that_enter_account_information_is_visible()">
+                <span>Then Verify that ENTER ACCOUNT INFORMATION is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_click_the_check_box_as(java.lang.String)">
+                <span>When i click the check box as "Mr"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_password_as(java.lang.String)">
+                <span>And i enter password as "12345"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_date_of_birth_as_octomber(java.lang.String,java.lang.String)">
+                <span>And i enter Date of birth as "11" Octomber "2004"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.select_checkbox_sign_up_for_our_newsletter()">
+                <span>When Select checkbox Sign up for our newsletter!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.select_checkbox_receive_special_offers_from_our_partners()">
+                <span>When Select checkbox Receive special offers from our partners!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_first_name_as(java.lang.String)">
+                <span>And i enter the first name as "mohnish"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_last_name_as(java.lang.String)">
+                <span>And i enter the last name as "PC"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_company_name_as(java.lang.String)">
+                <span>And i enter the company name as "IIAT"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_address_as(java.lang.String)">
+                <span>And i enter the address as "no.1 anna university staff qtrs"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_address2_as(java.lang.String)">
+                <span>And i enter the address2 as "nasuhfaubfafu"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_country_as(java.lang.String)">
+                <span>And i enter the country as "India"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_state_as(java.lang.String)">
+                <span>And i enter the state as "TamilNadu"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_city_as(java.lang.String)">
+                <span>And i enter the city as "Chennai"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_zipcode_as(java.lang.String)">
+                <span>And i enter the Zipcode as "600085"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_defination.register.i_enter_the_mobile_number_as(java.lang.String)">
+                <span>And i enter the Mobile Number as "1234567890"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="step_defination.register.click_create_account_button()">
+                <span>And Click Create Account button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (360, 637). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260511/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=1" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLydhve4tpQDFS3VwgQdmR0RIA" data-load-complete="true"></iframe>
+  (Session info: chrome=148.0.7778.167)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b18726cec4f6b418f4aedca4ca6b45e4, clickElement {id=f.4FE866C3089E3CC549E71C5C424F9103.d.8469338393AA812E41F8BA9CABC707D7.e.125}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\MOHNISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64893}, goog:processID: 17980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64893/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b18726cec4f6b418f4aedca4ca6b45e4)] -> xpath: //button[@data-qa='create-account']]
+Session ID: b18726cec4f6b418f4aedca4ca6b45e4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at base.Base_class.enterButton(Base_class.java:26)
+	at pom.Login_details.button(Login_details.java:121)
+	at step_defination.register.click_create_account_button(register.java:213)
+	at ✽.Click Create Account button(file:///C:/Users/MOHNISH/eclipse-workspace/Automationexercise/src/test/resources/Feature/Automation_exercise.feature:29)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_defination.register.verify_that_account_created_is_visible()">
+                <span>Then Verify that ACCOUNT CREATED! is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_defination.register.click_continue_button()">
+                <span>And Click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_defination.register.verify_that_is_visible(java.lang.String)">
+                <span>Then Verify that " Logged in as " is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_defination.register.click_delete_account_button()">
+                <span>And Click Delete Account button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_defination.register.verify_that_account_deleted_is_visible_and_click_continue_button()">
+                <span>Then Verify that ACCOUNT DELETED! is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>user register funtionality</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>user register funtionality</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given i should launch browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter into home page navigate to "http://automationexercise.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check whether it has been nagivated</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i Click on Signup / Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter the username as "Mohnish12345"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i enter the email as "jonny12345@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i Click Signup button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>user register funtionality</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given i should launch browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter into home page navigate to "http://automationexercise.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check whether it has been nagivated</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i Click on Signup / Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter the username as "hfyw"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i enter the email as "bfgdeiuqeuo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i Click Signup button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>user register funtionality</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given i should launch browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter into home page navigate to "http://automationexercise.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check whether it has been nagivated</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i Click on Signup / Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When i enter the username as "Mohnsih"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.167)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c8336ac2fbf177b172dd9a990803e60, findElement {using=xpath, value=//input[@placeholder='Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.167, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\MOHNISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52190}, goog:processID: 20924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52190/devtoo..., se:cdpVersion: 148.0.7778.167, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c8336ac2fbf177b172dd9a990803e60
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at base.Base_class.entervalue(Base_class.java:30)
+	at pom.Login_page.userName(Login_page.java:27)
+	at step_defination.register.i_enter_the_username_as(register.java:59)
+	at ✽.i enter the username as "Mohnsih"(file:///C:/Users/MOHNISH/eclipse-workspace/Automationexercise/src/test/resources/Feature/Automation_exercise.feature:50)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And i enter the email as "1234@$"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And i Click Signup button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>user register funtionality</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given i should launch browser</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter into home page navigate to "http://automationexercise.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then check whether it has been nagivated</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i Click on Signup / Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When i enter the username as "shravan"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i enter the email as "!@$nbduufegfeh.gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And i Click Signup button</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>And Click Create Account button</a>
+<div class="">
+<span class="badge badge-default">regester functionality.register valid credentials.And Click Create Account button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:42:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>When i enter the username as "Mohnsih"</a>
+<div class="">
+<span class="badge badge-default">regester functionality.user register funtionality.When i enter the username as "Mohnsih"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:41:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>register valid credentials</a>
+<div class="">
+<span class="badge badge-default">regester functionality.register valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@san</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@san</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:41:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>user register funtionality</a>
+<div class="">
+<span class="badge badge-default">regester functionality.user register funtionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:41:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>user register funtionality</a>
+<div class="">
+<span class="badge badge-default">regester functionality.user register funtionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:42:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>user register funtionality</a>
+<div class="">
+<span class="badge badge-default">regester functionality.user register funtionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:42:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>user register funtionality</a>
+<div class="">
+<span class="badge badge-default">regester functionality.user register funtionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 13, 2026 07:41:27 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 13, 2026 07:42:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='60%'><b>3</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='40%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='84%'><b>48</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>2</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"regester functionality":84.945
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@san</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 3,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 48,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 7,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
